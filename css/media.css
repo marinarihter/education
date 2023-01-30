@@ -1,0 +1,336 @@
+@media (max-width: 1439px) {
+    #people-partners {
+        flex-direction: row;
+    }
+    .delete-side--mobile {
+        margin:0;
+    }
+}
+
+@media (max-width: 1408px) {
+    .philosophy-bottom-add-line {
+        display: none;
+    }
+
+    .problems-bottom-item {
+        width: 30%;
+    }
+}
+
+@media (max-width: 1272px) {
+    .huge {
+        font-size: 56px;
+    }
+    .philosophy-bottom-add-line {
+        display: block;
+    }
+}
+
+@media (max-width: 1200px) {
+    .mobile { 
+        display: inline-block;
+    }
+    .desktop {
+        display: none;
+    }
+
+    .burger-menu-button {
+        width: 40px;
+        height: 40px;
+        margin-left: auto;
+        margin-right: 0;
+        margin-top: 0;
+        margin-bottom: auto;
+        display: flex;
+        flex-direction: row-reverse;
+        margin-right: 3.5%;
+        margin-top: -12px;
+    }    
+
+
+
+    .section-tag--side--mobile {
+        margin-top: 25%;
+    }
+
+    .section-tag--center--mobile {
+        margin-top: 18%;
+    }
+
+    #problems-content {
+        max-width: 720px;
+        width: 100%;
+    }
+
+    #problems-content h2 {
+        max-width: 100%;
+    }
+
+    #problems-content p.section-paragraph {
+        max-width: 550px;
+    }
+
+    #section-problems-top-design-side {
+        display: none;
+    }
+
+    .problems-bottom-item-top {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .problems-bottom-item {
+        width: 300px;
+    }
+
+    .philosophy-bottom-add-line {
+        display: none;
+    }
+
+    #technology-top {
+        background: url(../image/technology-heading-background.jpg) center center no-repeat;
+        background-size: cover;
+        padding-top: 100px;
+        padding-bottom: 196px;
+    }
+
+    #philosophy-top {
+        height: 100%;
+        background: none;
+    }
+
+    .philosophy-top-image {
+        height: 534px;
+        background: url(../image/philosophy-background--1200.jpg) top center no-repeat;
+        background-size: cover;
+    }
+
+
+    
+}
+
+@media (max-width: 1080px) {
+    .problems-bottom-item {
+        width: 29%;
+    }
+    }   
+
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 46px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+
+    .huge {
+        font-size: 46px;
+    }
+
+    .goal-logo {
+        display: none;
+    }
+    #goal-picture {
+        background: url(../image/goal-mobile.png) top center no-repeat;
+        background-size: cover;
+    }
+
+    .history-huge-icon {
+        display: none;
+    }
+    #history-picture {
+        background: url(../image/history-planet-mobile.png) top center no-repeat;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 900px) {
+
+    #problems-bottom {
+        justify-content: space-evenly;
+    }
+
+    .problems-bottom-item {
+        width: 300px;
+    }
+}
+
+
+@media (max-width: 808px) {
+
+  
+    .two-sections-layout {
+        width: auto;
+    }
+
+    .two-sections-layout-item {
+        width: 100%;  
+    }   
+    .flex-content--inside--left-side {
+        margin: 0 10%;
+    }
+
+    .flex-content--inside--right-side {
+        margin: 0 10%;
+    }
+
+    #program-picture {
+        display: none;
+    }
+
+    .orange-picture {
+        display: none;
+    }
+    #goal-content {
+        background: url(../image/goal-mobile.png) top center no-repeat;
+        background-size: cover;
+    }
+    #history-content {
+        background: url(../image/history-planet-mobile.png) top center no-repeat;
+        background-size: cover;
+    }
+
+    .button-main {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section-tag {
+        margin-top: 0;
+    }
+
+    .orange-tag {
+        margin-top: 75px;
+    }
+
+    .orange-content p.section-paragraph {
+        max-width: 550px;
+    }
+
+    .orange-content .button-main {
+        margin-bottom: 75px;
+    }
+
+    .button-main {
+        margin-bottom: 75px;
+    }
+
+    .section--mobile {
+        height: fit-content; 
+        padding: 75px 10% 0;
+    }
+
+    .flex-content--inside--left-side {
+        margin: 0;
+    }
+
+    #program-content p.section-paragraph {
+        width: calc(100% - 20px)
+    }
+
+    #problems-bottom {
+        display: none;
+    }
+
+    #problems-content p.section-paragraph {
+        margin-bottom: 0;
+    }
+
+    .huge {
+        font-size: 36px;
+    }
+
+    #philosophy-bottom {
+        margin: 75px 6.875% 70px 7.847%; 
+    }
+
+    .philosophy-top-image {
+        height: 350px;
+        background: url(../image/philosophy-background.jpg) top center no-repeat;
+        background-size: cover;     
+    }
+    #problems-content-main {
+        margin-left: 0;
+    }
+
+    .step-description p {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 719px) {
+
+    .bigger-719 {
+        display: none;
+    }
+
+    .huge {
+        font-size: 30px;
+    }
+
+    .technology-step--flex-item {
+        width: 100%;
+    }
+
+    .technology-step {
+        height: fit-content;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+@media (max-width: 598px) {
+
+    .bigger-598 {
+        display: none;
+    }
+
+    .people-card-item {
+        width: 100%;
+    }
+    .people-item-picture {
+        height: 240px;
+    }
+
+    .philosophy-quote-mark img{
+        max-width: 25px;
+    }
+
+    #people-schools-picture{
+        background: url(../image/people-schools-mobile-wide.png) top center no-repeat;
+        background-size: cover;
+    }
+
+    #people-participants-picture{
+        background: url(../image/people-participants-mobile-wide.png) top center no-repeat;
+        background-size: cover;
+    }
+
+    #people-partners-picture{
+        background: url(../image/people-partners-mobile-wide.png) top center no-repeat;
+        background-size: cover;
+    }
+    .people-flex-card {
+        height: fit-content;
+    }
+
+    .people-rhombus-overlap {
+        display: none;
+    }
+}
+
+@media (max-width: 598px) {
+    .huge {
+        font-size: 24px;
+        margin-right: 10%;
+    }
+    #technology-top h2 {
+        max-width: 90%;
+    }
+}
+@media (max-width: 480px) {
+    .section--mobile--480 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

@@ -1,0 +1,541 @@
+@font-face {
+    font-family: 'Basis Grotesque Pro';
+    src: url(../fonts/BasisGrotesquePro-Regular.woff2) format('woff2'),
+         url(../fonts/BasisGrotesquePro-Regular.woff) format('woff'),
+         url(../fonts/BasisGrotesquePro-Regular.otf) format('opentype');
+         font-display: fallback;
+}
+
+@font-face {
+    font-family: 'Basis Grotesque Pro';
+    src: url(../fonts/BasisGrotesquePro-Bold.woff2) format('woff2'),
+         url(../fonts/BasisGrotesquePro-Bold.woff) format('woff'),
+         url(../fonts/BasisGrotesquePro-Bold.eot) format('opentype');
+         font-weight: 700;
+         font-display: fallback;
+}
+
+@font-face {
+    font-family: 'Basis Grotesque Pro';
+    src: url(../fonts/BasisGrotesquePro-Light.woff2) format('woff2'),
+         url(../fonts/BasisGrotesquePro-Light.woff) format('woff'),
+         url(../fonts/BasisGrotesquePro-Light.eot) format('opentype');
+         font-weight: 300;
+         font-display: fallback;
+}
+
+body {
+    font-family: 'Basis Grotesque Pro', 'Raleway', sans-serif;
+    color: black;
+    width: 100%;
+    background: white;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* fonts */
+
+    h1, h2, h3, p {
+        margin: 0;
+        padding: 0;
+    }
+
+    h1, h2, h3, p {
+        letter-spacing: -0.03em;
+    }
+
+    h1, h2, h3, .section-tag {
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    h1 {
+        font-size: 57px;
+        line-height: 1.035;
+    }
+
+    h2 {
+        font-size: 38px;
+        line-height: 1.1;
+    }
+
+    h3 {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    p.regular {
+        opacity: 0.6;
+    }
+
+    p.technology-number {
+        opacity: 0.7;
+    }
+
+    p.minor {
+        opacity: 0.35;
+        font-weight: 300;
+    }
+
+/*common*/
+
+    .mobile {
+        display: none;
+    }
+
+    button {
+        margin: 0;
+        padding: 0;
+        border: none;
+        outline: none;
+        font: inherit;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .button {
+        padding: 0;
+        border: 0;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    } 
+
+    a:visited {
+        text-decoration: none;
+        color: black;
+    }
+
+
+/**containers**/
+
+    .container-main {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
+
+/*flex-containers*/
+
+    .flex-container {
+        display: flex;
+        flex-flow: row wrap;    
+        justify-content: space-evenly;
+    }
+
+    .two-sections-layout {
+        display: flex;
+        width: 100%;
+    }
+
+    .two-sections-layout-item {
+        width: 50%;  
+    }
+
+    .flex-content--inside--left-side {
+        margin: 0 11.67% 0 29%;
+    }
+
+    .flex-content--inside--right-side {
+        margin: 0 6.94%;
+    }
+
+
+/*content-parts -- common properties*/
+
+    .section-tag {
+        color: #0536FC;
+        margin: 150px auto 32px 0;
+    }
+
+    .section-heading {
+        margin-bottom: 72px;
+    }
+
+    .section-paragraph {
+        margin-bottom: 100px;
+    }
+
+    .button-main {
+        background-color: #0536FC;
+        max-width: 213px;
+        text-align:center;
+        padding: 18px 0;
+    }
+
+    .button-main a {
+        font-size: 16px;
+        color: white;
+        text-transform: uppercase;
+    }
+
+/*content part for people and technology sections*/
+
+    .flex-card-description-item {
+        margin: 50px 0 0 50px;
+    }
+
+    .order-number {
+        margin-bottom: 30px;
+    }
+
+    .flex-card--inside-grid {
+        display: grid;
+        grid-template: auto 100px / auto 100px;
+        grid-template-areas: 
+        "content cotent"
+        "content button"
+    }
+
+    .flex-card--button {
+        grid-area: button;
+    }
+
+    .flex-card-content:hover {
+        background-color: #0536FC;
+        color: white;
+    }
+
+
+/***SECTIONS***/
+
+/**header**/
+
+    header {
+        padding: 24px 0 25px 50px;
+    }
+
+    .header-item {
+        display: inline-block;
+    }
+
+    .logo-area {
+        position: relative;
+        margin-right: 82px;
+    }
+
+    .logo-header {
+        position: absolute;
+        top: 3px;
+    }
+
+    .logo-area p {
+        margin: 0 0 0 50px;
+    }
+
+    .header-menu {
+        margin: 0;
+    }
+    .header-menu li {
+        display: inline;
+        margin-right: 40px;
+        font-weight: 700;
+    }
+
+    #for-partners-menu {
+        margin-right: 63px;
+    }
+
+    #support-menu {
+        margin-right: 0;
+    }
+
+
+/**program**/
+
+    .section-program {
+        height: 748px; 
+    }
+
+    #program-content p.section-paragraph {
+        max-width: 237px;
+    }
+
+    #program-picture{
+        background: url(../image/program-picture.jpg) top center no-repeat;
+        background-size: cover;
+    }
+
+
+/**goal**/
+
+    .orange-content h2 {
+        max-width: 440px;
+    }
+
+    .orange-content p.section-paragraph {
+        max-width: 330px;
+    }
+
+    .orange-content .button-main {
+        margin-bottom: 28.62%;
+    }
+
+    .orange-picture{
+        background: #FF8201;
+    }
+
+    .goal-logo{
+        max-width: fit-content;
+        max-height: 821px;
+        margin-left: auto;    
+    }
+
+    .goal-logo img{
+        max-width: 100%;
+        margin: auto;
+    }
+
+
+/**people**/
+    .people-flex-item {
+        width: 720px;
+    }
+
+/*cards*/
+
+    .people-card-item {
+        width: 50%;
+    }
+
+    .people-flex-card {
+        height: 445px;
+        position: relative;
+    }
+
+    #people-participants {
+        flex-direction: row-reverse;
+    }
+
+    #people-partners {
+        flex-direction: row-reverse;
+    }
+
+    .people-card--description h3 {
+        margin-bottom: 70px;
+    }
+
+    .people-item-picture {
+        background: top center no-repeat;
+        background-size: cover;
+    }
+
+    #people-schools-picture{
+        background: url(../image/people-schools.png);
+    }
+
+    #people-participants-picture{
+        background: url(../image/people-participants.png);
+    }
+
+    #people-partners-picture{
+        background: url(../image/people-partners.png);
+    }
+
+    .people-rhombus-overlap {
+
+        width: 30px;
+        height: 30px;
+        background-color: white;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        top: 40px;
+        position: absolute;
+        transform: rotate(45deg);
+    }
+
+    .flex-card-content:hover + .people-rhombus-overlap { 
+        background-color: #0536FC;}
+
+
+/**problems**/       
+
+    .section-problems {
+        padding-bottom: 150px;
+    }    
+
+    #problems-top p.minor {
+        margin-top: 202px;        
+        margin-bottom: 155px;
+    }
+
+    #problems-content h2 {
+        max-width: 490px;
+    }
+
+    #problems-content p.section-paragraph {
+        max-width: 374px;
+        margin-bottom: 5%;
+    }
+
+    #problems-bottom {
+        justify-content: flex-end;
+    }
+
+    .problems-bottom-item {
+        width: 25%;
+    }
+
+    .problems-bottom-item-top {
+        margin: 45px 13.89% 29px 13.89%;
+        height: 100px;
+    }
+    .problem-bottom-item-icon {
+        display: inline-block;
+        margin: auto 35px auto 0;
+    }
+
+    .problems-number {
+        display: inline-block;
+        font-size: 100px;
+        font-weight: 700;
+        line-height: 100px;
+        margin: 0 0 auto 0;
+    }
+
+    #problems-number-4 {
+        margin-top: -10px;
+    }
+
+    #problems-item-4 {
+        margin-top: 10px;
+    }
+
+    .problems-bottom-item p.regular {
+        margin-left: 13.89%;
+    }
+
+    #problem-description-amount {
+        max-width: 210px;
+    }
+
+    #problem-description-years {
+        max-width: 150px;
+    }
+
+    #problem-description-gap {
+        max-width: 180px;
+    }
+
+
+    /**program**/
+
+    #philosophy-top {
+        height: 960px; 
+        background: url(../image/philosophy-background.jpg) top center no-repeat;
+        background-size: cover;
+        justify-content: flex-start;
+        align-items: flex-end
+    }
+
+    .philosophy-top-content {
+        height: 534px;
+        background: white;
+    }
+
+    .philosophy-section-tag {
+        margin-top: 120px;
+    }
+
+    #philosophy-bottom {
+        display: flex;
+        margin: 150px 6.875% 150px 7.847%; 
+    }
+
+    .philosophy-quote-mark {
+        margin-right: 35px;
+    }
+
+    .philosophy-bottom-content {
+        float:left;
+    }
+
+    .huge {
+        font-size: 71px;
+        line-height: 1.056;
+        font-weight: 700;
+    }
+
+    .long-dash {
+        letter-spacing: -0.085em;;
+    }
+
+    .philosophy-bottom-add-line {
+        float:right;
+        margin-right: 115px;
+        margin-top: -35px;
+    }
+
+
+    /**history**/
+
+    .history-huge-icon{
+        max-width: fit-content;
+        max-height: 545px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 16.7%;
+        margin-bottom: auto;
+    }
+
+    .history-huge-icon img{
+        max-width: 100%;
+        margin: auto; 
+    }
+
+
+
+
+    /**technology**/ 
+
+    #technology-top {
+        background: url(../image/technology-heading-background.jpg) top center no-repeat;
+        background-size: cover;
+        padding-top: 150px;
+        padding-left: 14.58%;
+        padding-bottom: 485px;
+    }
+
+    .technology-section-tag {
+        margin-top: 0;
+    }
+
+    #technology-top h2, #technology-top p.section-tag {
+        color: white;
+    }
+
+    #technology-top h2 {
+        max-width: 460px;
+    }
+
+    .technology-step--flex-item {
+        width: 360px;
+        height: 445px;
+        
+    }
+
+    .step-description h3{
+        margin-bottom: 70px;
+    }
+
+
+    .step-description p {
+        max-width: 200px;
+    }
+
+
